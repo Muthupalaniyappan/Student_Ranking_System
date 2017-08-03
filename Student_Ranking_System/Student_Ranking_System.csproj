@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{862254E8-540B-43BE-B3D4-804711D0A9B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Student_Ranking_System</RootNamespace>
+    <AssemblyName>Student_Ranking_System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis.Designer.cs">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkMessage.Designer.cs">
+      <DependentUpon>BulkMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deletion.Designer.cs">
+      <DependentUpon>Deletion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firstscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firstscreen.Designer.cs">
+      <DependentUpon>Firstscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inserting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserting.Designer.cs">
+      <DependentUpon>Inserting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkRegister.Designer.cs">
+      <DependentUpon>MarkRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ranking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ranking.Designer.cs">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Retrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retrive.Designer.cs">
+      <DependentUpon>Retrive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashscreen.Designer.cs">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Std_Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Std_Selection.Designer.cs">
+      <DependentUpon>Std_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentComparition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentComparition.Designer.cs">
+      <DependentUpon>StudentComparition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectAnalysis.Designer.cs">
+      <DependentUpon>SubjectAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalAnalysis.Designer.cs">
+      <DependentUpon>TotalAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Truncation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Truncation.Designer.cs">
+      <DependentUpon>Truncation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Analysis.resx">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkMessage.resx">
+      <DependentUpon>BulkMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletion.resx">
+      <DependentUpon>Deletion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Email.resx">
+      <DependentUpon>Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firstscreen.resx">
+      <DependentUpon>Firstscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inserting.resx">
+      <DependentUpon>Inserting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkRegister.resx">
+      <DependentUpon>MarkRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ranking.resx">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retrive.resx">
+      <DependentUpon>Retrive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Std_Selection.resx">
+      <DependentUpon>Std_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentComparition.resx">
+      <DependentUpon>StudentComparition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectAnalysis.resx">
+      <DependentUpon>SubjectAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalAnalysis.resx">
+      <DependentUpon>TotalAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Truncation.resx">
+      <DependentUpon>Truncation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\123.jpg" />
+    <Content Include="Assets\123.png" />
+    <Content Include="Assets\1493645374_ChevronLeft.png" />
+    <Content Include="Assets\1493645378_icon-ios7-arrow-right.png" />
+    <Content Include="Assets\2.jpg" />
+    <Content Include="Assets\3%281%29.jpg" />
+    <Content Include="Assets\business_3.jpg" />
+    <Content Include="Assets\Great-customer-service-animated-icon-by-Fede-Cook.gif" />
+    <Content Include="Assets\Icon.ico" />
+    <Content Include="Assets\O7MEW30%281%29.jpg" />
+    <Content Include="Assets\OCNVGS0.jpg" />
+    <Content Include="Assets\splash1.jpg" />
+    <Content Include="Assets\splash2.jpg" />
+    <Content Include="Assets\splash3.jpg" />
+    <Content Include="Assets\splash4.jpg" />
+    <Content Include="Assets\splash5.jpg" />
+    <Content Include="Assets\this also.png" />
+    <Content Include="Icon.ico" />
+    <Content Include="itextsharp.dll" />
+    <Content Include="itextsharp.pdfa.dll" />
+    <Content Include="iTextSharp.xml" />
+    <Content Include="itextsharp.xtra.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
